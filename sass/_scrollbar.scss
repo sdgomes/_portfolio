@@ -1,0 +1,29 @@
+/* scrollbar */
+
+.scrollbar {
+    &::-webkit-scrollbar {
+        width: 3px;
+        height: 3px;
+    }
+    &::-webkit-scrollbar-button {
+        display: none;
+    }
+    &::-webkit-scrollbar-thumb {
+        min-height: 80px;
+        border-radius: 50px;
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb:active {
+        cursor: all-scroll;
+    }
+    &::-webkit-scrollbar-track:hover {
+        background-color: rgba(0, 0, 0, 0.129);
+        border-radius: 50px;
+    }
+    &:hover::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.38);
+    }
+}
